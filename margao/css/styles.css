@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'Apex New';
+    src:  url('../assets/fonts/ApexNew-Medium.otf') format('opentype'),
+    url('../assets/fonts/ApexNew-Bold.otf') format('opentype'),
+    url('../assets/fonts/ApexNew-Light.otf') format('opentype')
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Apex New';
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    position: relative;
+    background-color: #fff;
+    width: 768px;
+}
+
+#content {
+    width: 768px;
+}
+.header_img {
+    height: 250px;
+
+    background-repeat: no-repeat;
+}
+
+#navDetails {
+    background-color: white;
+    height: 107px;
+}
+
+#navDetails p{
+    color: black;
+    font-size: 16px;
+    font-family: 'Apex New';
+    text-decoration: none;
+    line-height: 25px;
+    padding-left: 100px;
+    padding-right: 30px;
+}
+.bold {
+    font-weight: bold;
+}
+
+#shopSection {
+    background-color: #efefef;
+    height: 1000px;
+}
+
+.selected {
+    color: #f05022 !important;
+}
+
+/*****
+    Recipes section
+ */
+
+@font-face {
+    font-family: 'Apex New';
+    src:  url('../assets/fonts/ApexNew-Medium.otf') format('opentype'),
+    url('../assets/fonts/ApexNew-Bold.otf') format('opentype'),
+    url('../assets/fonts/ApexNew-Light.otf') format('opentype')
+
+}
+
+.recipesSection {
+    display: grid;
+    grid-template: 190px 190px  / 240px 240px 240px;
+    grid-gap: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+}
+
+.recipesSection>div {
+    background-color: #ebebeb;
+}
+
+
+.recipesItem {
+    display: grid;
+    grid-template: 123px 50px  / auto;
+    background-color: #ebebeb;
+
+}
+
+
+.recipesItem img{
+    width: 100%;
+}
+
+.recipesItem p{
+    margin-top: 10px;
+    color: black;
+    font-size: 14px;
+    font-family: "Apex New";
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right:10px;
+    line-height: 20px;
+}
+
+.recipesItem a {
+    text-decoration: none !important;
+}
+.recipesItem a:hover p{
+    color: #f05022 !important;
+}
+
+/**
+    Modal
+ */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+
+    margin: 7% auto; /* 15% from the top and centered */
+    padding: 20px;
+    /*border: 1px solid #888;
+    background-color: #fefefe;
+    */
+    max-width: 768px; /* Could be more or less, depending on screen size */
+    min-height: 800px;
+    /*background-image: url("../assets/backgound.png");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.recipeContent {
+    margin: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    background-color: rgba(255,255,255,0.7);
+    min-height: 760px;
+    max-width: 768px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.recipeContent .title {
+    margin-top: 10px;
+    color: black;
+    font-size: 20px;
+    font-family: "Apex New";
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recipeContent .video iframe{
+    width: 100%;
+}
+
+
+.recipeDetail {
+    display: grid;
+    grid-template: auto  / 50% 50%;
+}
+
+.recipeDetail>div {
+    text-align: left;
+    font-size: 15px;
+    font-family: "Apex New";
+    text-decoration: none;
+
+    line-height: 25px;
+    color: black;
+}
+
+.fullWidth{
+    width: 100%;
+}
+/*
+    Collapsible section
+ */
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: rgba(255, 255, 255, 0);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-family: "Apex New";
+    text-decoration: none;
+    font-weight: bold;
+}
+.collapsible:after {
+    content: url("../assets/icons/Down arrow.png");
+
+    font-size: 20px;
+    font-family: "Apex New";
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.collapsible.active:after {
+    content: url("../assets/icons/Up arrow.png");
+
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    /*background-color: #ccc;*/
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.productContent {
+    padding: 0 0px;
+    height: 220px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    /*background-color: #f1f1f1;*/
+}
+
+.productsSectionMrg {
+    height: 220px;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 1500px;
+}
+
+.productItemMrg {
+    border: none !important;
+    width: 130px !important;
+    text-align: center;
+    display: inline-block !important;
+}
+
+.productItemMrg a, .productItemMrg a:hover, .productItemMrg a:link, .productItemMrg a:visited{
+    color: #444 !important;
+    text-decoration: none !important;
+}
+.productImageSection{
+    height: 160px;
+    width: 130px;
+    margin: 0 auto;
+
+}
+
+.productRecipeImage{
+    padding-top: 5px;
+    height: 150px !important;
+}
+
+.productNameSection{
+    font-family: "Apex New";
+    width: 125px;
+    text-align: center;
+    margin: 0 auto;
+    white-space: normal;
+    font-size: 13px;
+
+}
+
+/****
+Navigation Section
+ */
+
+@font-face {
+    font-family: 'Apex New';
+    src:  url('../assets/fonts/ApexNew-Medium.otf') format('opentype'),
+    url('../assets/fonts/ApexNew-Bold.otf') format('opentype'),
+    url('../assets/fonts/ApexNew-Light.otf') format('opentype')
+
+}
+
+.logo {
+
+    height: 20px;
+    padding: 10px 30px;
+}
+
+#navigation-container {
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+}
+
+.navigation-bar {
+    background-color: #ebebeb;
+    height: 40px;
+    width: 100%;
+    text-align:center;
+}
+.navigation-bar img{
+    float:left;
+}
+.navigation-bar ul {
+
+    padding-top: 5px;
+    margin: 0px;
+    text-align: left;
+
+    vertical-align:top;
+}
+
+.navigation-bar li {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+
+
+}
+
+.navigation-bar li a {
+    color: black;
+    font-size: .80em;
+    font-family: "Apex New";
+    text-decoration: none;
+    line-height: 35px;
+    padding: 5px 10px;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+.selected {
+    color: #f05022 !important;
+}
+#menu {
+    float: right;
+}
+
+#shopSection {
+    background-color: white;
+}
